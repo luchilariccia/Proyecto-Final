@@ -1,0 +1,400 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+/*Separación*/
+
+#sub-inicio {
+
+    font-family: "subtitulo";
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+
+}
+
+.parrafo {
+
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    size: 25px;
+    font-family:"parrafo" ;
+
+}
+
+.parrafo-inicio {
+
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 15px;
+    font-family:"parrafo" ;
+
+}
+
+.parrafo-inicio-2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 15px;
+    font-family:"parrafo" ;
+    line-height: 1.5;
+
+}
+
+.parrafo-nosotros {
+
+    display: flex;
+    justify-content: start;
+    margin: 20px;
+    font-family: "parrafo" ;
+    font-size: 15px;
+    line-height: 1.5;
+
+}
+
+@font-face {
+
+    font-family: "Subtitulo";
+    src: url(../fonts/Tipografia-sub.ttf);
+
+}
+@font-face {
+
+    font-family: "parrafo";
+    src: url(../fonts/tipografia-p.ttf);
+
+}
+
+@font-face {
+
+        font-family: "footer";
+        src:url(../fonts/Montserrat-Italic-VariableFont_wght.ttf);
+
+}       
+
+
+/*Separación*/
+
+header {
+
+    display: flex;
+    justify-content: center;
+    transition: all 1s;
+
+}
+
+header:hover {
+
+    transform: scale(01.05);
+}
+
+/*Separación*/
+
+.navbar { 
+
+    background-image: radial-gradient( rgb(73, 73, 73) , black );
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+
+.navbar ul li { 
+
+    display: inline-block;
+    margin: 10px;
+    
+}
+
+.navbar ul li a {
+
+    font-family: "Subtitulo";
+    text-decoration: none;
+    color: white;
+
+}
+
+/*Separación*/
+
+.contenedor-inicio {
+
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta-ph-i { 
+
+    margin: 50px;
+    width: 250px;
+    background-color: black;
+    padding: 10px;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 5px;
+    
+}
+
+.subtitulo {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: 'Subtitulo';
+    color: red;
+    
+}
+
+.contenedor {
+
+    display: flex;
+    justify-content: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(73,73,73,0.73) 50%, rgba(0,0,0,1) 100%);
+    padding: 30px;
+    
+
+}
+
+
+
+.tarjeta { 
+
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 250px;
+    background-color: black;
+    padding: 10px;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 5px;   
+}
+
+
+
+
+
+
+.tarjeta-t {
+
+    color: white;
+    font-size: large;
+    text-align: center;
+    font-family: subtitulo;
+
+}
+
+.tarjeta-p {
+
+    font-family: "parrafo";
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+
+.tarjeta-i {
+
+    display: flex;
+    jus
+    margin: 15px;
+    width: 250px;
+
+}
+
+.tarjeta-b { 
+
+    background: rgb(175,174,174);
+    background: linear-gradient(180deg, rgba(175,174,174,1) 0%, rgba(124,124,124,1) 25%, rgba(73,73,73,1) 50%, rgba(124,124,124,1) 75%, rgba(175,174,174,1) 100%);
+    padding: 8px;
+    color: black;
+    border: 1px;
+    border-radius: 8px;
+    margin-top: 10px; 
+    margin-bottom: 5px;  
+    font-family: subtitulo; 
+    transition: all 0.5s;
+
+}
+
+.tarjeta-b:hover {
+    background-color: grey;
+    color: white;
+    transform: scaleX(1.20);
+}
+
+.contenedor-galeria {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+
+
+
+.contenedor-galeria div img {
+
+    height: 161.25px;
+    width: 250px;
+
+
+}
+
+.tarjeta-ph { 
+
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(73,73,73,0.73) 50%, rgba(0,0,0,1) 100%);
+    padding: 10px;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 2.5px;
+    
+
+}
+
+
+.formularios {
+
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding: 10px;
+
+}
+
+.formsItems {
+
+    margin: 5px;
+}
+
+/*Separación*/
+
+.contenido {
+
+    margin: 100px;
+
+}
+
+/*Separación*/
+
+footer {
+
+    margin-bottom: 0px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 25%, rgba(73,73,73,1) 50%, rgba(36,36,36,1) 75%, rgba(0,0,0,1) 100%);
+}
+
+.pie { 
+
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin-top: 30px;
+
+}
+
+.pie h5 {
+
+    align-content: center;
+    justify-content: center;
+    font-family: "footer";
+    font-weight: 1;
+    font-size: 16px;
+    color: white;
+
+}
+
+.pie a img {
+    margin-top: 80px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s;
+}
+
+.pie a img:hover {
+
+    transform: scale(1.5);
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+}
+
+.bandera {
+    display: flex;
+    justify-content: center;
+}
+
+.bandera img {
+
+    margin-top: 10px;
+    width: 100px;
+    height: 66.5px;
+    margin-bottom: 15px;
+}
+
+.txt-footer {
+    margin-top: 10px;
+}
+
+.banner {
+
+
+   display: flex;
+   flex-direction: column;
+   width: 150px;
+    
+
+}
+
+.contenedor-logo {
+
+    
+
+    height: 61.25px;
+    width: 150px;
+
+
+}
+
+
+
+.banner-t {
+
+    margin-left: 100px;
+    width: 10%;
+    margin: 15px;
+
+}
+
+.logos {
+    
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    margin: 10px;
+
+}
+
+
+
