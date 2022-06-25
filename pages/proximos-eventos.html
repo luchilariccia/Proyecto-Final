@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuperAutosUY</title>
     <link rel="shortcut icon" href="../assets/img/logos/logo-png.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-    <header>
+<body class="container">
+    <header class="header">
         <a href="../index.html"><img src="../assets/img/logos/logo-png.png" alt="logo"></a>
     </header>
 
@@ -23,11 +24,11 @@
         </ul>    
     </nav>
 
-    <main>
+    <main class="main">
 
         <h3 class="subtitulo">Próximos eventos</h3>
         <div class="contenedor">
-            <div class="tarjeta" data-aos="fade-right"
+            <div class="tarjeta" data-aos="fade-right "
             data-aos-anchor="#example-anchor"
             data-aos-offset="700"
             data-aos-duration="700">
@@ -37,7 +38,7 @@
                 <a href="https://www.google.com/maps/dir/-34.8308353,-55.9701772/museo+oceanográfico/@-34.8650107,-56.1200211,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x959f8105a74e6a3d:0xebe69019d4a31e24!2m2!1d-56.1236451!2d-34.9032166"><button class="tarjeta-b">Ir a Maps</button></a>
             </div>
 
-            <div class="tarjeta" data-aos="fade-right"
+            <div class="tarjeta" data-aos="fade-right "
             data-aos-anchor="#example-anchor"
             data-aos-offset="700"
             data-aos-duration="700">
@@ -47,7 +48,7 @@
                 <a href="https://www.google.com/maps/dir//Estadio+Centenario,+11400+Montevideo,+Departamento+de+Montevideo/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x959f81021a293c9f:0x47c23b3c464091c1?sa=X&ved=2ahUKEwjNpt7g1JL4AhXbQ7gEHdAzBLcQ48ADegQIAhAT"><button class="tarjeta-b">Ir a Maps</button></a>
             </div>
 
-            <div class="tarjeta" data-aos="fade-left"
+            <div class="tarjeta" data-aos="fade-left "
             data-aos-anchor="#example-anchor"
             data-aos-offset="700"
             data-aos-duration="700">
@@ -57,7 +58,7 @@
                 <a href="https://www.google.com/maps/dir/-34.8308353,-55.9701772/Autódromo+Victor+Borrat+Fabini,+637H%2BXCJ,+15800+Ciudad+de+la+Costa,+Departamento+de+Canelones/@-34.8080348,-56.0201625,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x959f8a082e820cfb:0xb03bd017d3eb1677!2m2!1d-55.921483!2d-34.785046"><button class="tarjeta-b">Ir a Maps</button></a>
             </div>
 
-            <div class="tarjeta" data-aos="fade-left"
+            <div class="tarjeta" data-aos="fade-left " 
             data-aos-anchor="#example-anchor"
             data-aos-offset="700"
             data-aos-duration="700">
@@ -68,9 +69,104 @@
             </div>
         </div>
 
+        <h3 class="subtitulo2">Confirmá tu asistencia</h3>
+
+        <div class="contenedor_formulario">
+
+            <form class="formulario">
+
+                <div class= "formsItems">                                         
+                       
+                    <input class="form_area" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre"required>
+                    <input class="form_area" type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido"required>
+                    <input class="form_area" type="email" name="Email" id="Email" placeholder="Ingrese su Email" required>
+                                                                    
+                </div>
+
+                <div class= "contenedor_radios">    
+                                           
+                        <input type="radio" name="Vehiculo" id="Auto">
+                        <label class="radio" for="Vehiculo">Auto</label>
+                        <input type="radio" name="Vehiculo" id="Camioneta">
+                        <label class="radio"    for="Vehiculo">Camioneta</label>
+                        <input type="radio" name="Vehiculo" id="Camion">
+                        <label class="radio" for="Camión">Camión</label>
+                        <input type="radio" name="Vehiculo" id="Otros">
+                        <label class="radio" for="Otros">Otros</label>
+                              
+                    
+
+                </div>  
+
+                <div class="botones_formulario"> 
+                    <input class="btn_submit" type="submit" value="Enviar">
+                    <input class="btn_submit" type="reset" value="Reiniciar">
+                </div> 
+            </form>
+        </div>
+
     </main>
 
-    <footer>
+    <aside class="aside">
+ 
+        <div class="contenedor-logo">
+                
+            <img class="logo-aside" src="../assets/img/logos/logo-auto.png" alt="">
+        
+        </div>   
+
+        <div class="txt-aside">
+            <h2>REDBLOCK CARS</h2>
+        </div>
+        
+        <div class="img-aside">
+            <img class="logos" src="/assets/img/logos/bmw.png" alt="">
+
+            <img class="logos" src="/assets/img/logos/vw.png" alt="">
+
+            <img class="logos" src="/assets/img/logos/peugeot.png" alt="">
+
+            <img class="logos" src="/assets/img/logos/renault.png" alt="">
+        </div>   
+    </aside>
+
+    <aside class="aside2">
+
+        <div class="aside">
+
+            
+            
+
+            <div class="contenedor-logo">
+                    
+                <img class="logo-aside" src="../assets/img/logos/logo-auto.png" alt="">
+            
+            </div>   
+
+            <div class="txt-aside">
+                <h2>REDBLOCK CARS</h2>
+            </div>
+            
+            
+            
+            <div class="img-aside">
+                <img class="logos" src="/assets/img/logos/bmw.png" alt="">
+
+                <img class="logos" src="/assets/img/logos/vw.png" alt="">
+
+                <img class="logos" src="/assets/img/logos/peugeot.png" alt="">
+
+                <img class="logos" src="/assets/img/logos/renault.png" alt="">
+            </div>
+
+
+
+
+        </div>
+
+    </aside>
+
+    <footer class="footer">
             
         <div class="pie">
             <a href="https://www.instagram.com/superautosuy/?hl=es-la"><img src="../assets/img/logos/logo-ig.png" alt="logo-ig"></a>
@@ -96,4 +192,5 @@
     <script>
         AOS.init();
       </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>   

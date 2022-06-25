@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Contacto</title>
     <link rel="shortcut icon" href="../assets/img/logos/logo-png.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
-<body>
-    <header>
+<body class="container">
+    <header class="header">
         <a href="../index.html"><img src="../assets/img/logos/logo-png.png" alt="logo"></a>
     </header>
 
@@ -25,7 +26,7 @@
         </ul>
     </nav>
 
-    <main>
+    <main class="main">
 
         <h3 class="subtitulo">Contacto</h3>
 
@@ -51,7 +52,7 @@
                 <button class="tarjeta-b">Comprar</button>
             </div>
 
-            <div class="tarjeta" data-aos="fade-left"
+            <div class="tarjeta" data-aos="fade-left "
                                  data-aos-anchor="#example-anchor"
                                  data-aos-offset="700"
                                  data-aos-duration="700">
@@ -61,7 +62,7 @@
                 <button class="tarjeta-b">Comprar</button>
             </div>
 
-            <div class="tarjeta" data-aos="fade-left"
+            <div class="tarjeta" data-aos="fade-left "
                                  data-aos-anchor="#example-anchor"
                                  data-aos-offset="700"
                                  data-aos-duration="700">
@@ -72,48 +73,107 @@
             </div>
         </div>  
 
+        <h3 class="subtitulo2">Reserva tu sesión</h3>
 
-        <form class="formularios">
+        <div class="contenedor_formulario">
+            <form class="formulario">
 
-             <div class= "formsItems">   
-                <fieldset>
-                    <legend>Información Personal</legend>
-                    <br>
+                <div class= "formsItems">                                         
+                       
+                    <input class="form_area" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre"required>
+                    <input class="form_area" type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido"required>
+                    <input class="form_area" type="email" name="Email" id="Email" placeholder="Ingrese su Email" required>
+                                                                    
+                </div>
 
-                        <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre"required>
-                        <input type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido"required>
-                        <input type="email" name="Email" id="Email" placeholder="Ingrese su Email" required>
-                    <br>
-                        <textarea name="Comentario" id="Comentario" cols="30" rows="10">Cuéntanos como sería tu sesión ideal.</textarea>
-                </fieldset>
-            </div>
+                <div class= "contenedor_radios">    
+                                           
+                        <input type="radio" name="Vehiculo" id="Auto">
+                        <label class="radio" for="Vehiculo">Auto</label>
+                        <input type="radio" name="Vehiculo" id="Camioneta">
+                        <label class="radio"    for="Vehiculo">Camioneta</label>
+                        <input type="radio" name="Vehiculo" id="Camion">
+                        <label class="radio" for="Camión">Camión</label>
+                        <input type="radio" name="Vehiculo" id="Otros">
+                        <label class="radio" for="Otros">Otros</label>
+                              
+                    <div class="aceptar">
+                        <input type="checkbox" name="acepto" value="si" required> <a href="./terminos-y-condiciones.html" target="_blank">Acepto los Términos y Condiciones</a> 
+                    </div> 
 
-            <div class= "formsItems">    
-                <fieldset>
-                    <legend>Información sobre tu verhículo</legend>
-                    <input type="radio" name="Vehiculo" id="Vehiculo">
-                    <label for="">Auto</label>
-                    <input type="radio" name="Vehiculo" id="Vehiculo">
-                    <label required     for="Camioneta">Camioneta</label>
-                    <input type="radio" name="Vehiculo" id="Vehiculo">
-                    <label for="Camión">Camión</label>
-                    <input type="radio" name="Vehiculo" id="Vehiculo">
-                    <label for="Otros">Otros</label>
+                </div>  
+
+                <div class="botones_formulario"> 
+                    <input class="btn_submit" type="submit" value="Enviar">
+                    <input class="btn_submit" type="reset" value="Reiniciar">
+                </div> 
+            </form>
+        </div>
+    </main>
 
 
+    <aside class="aside">
+ 
+        <div class="contenedor-logo">
+                
+            <img class="logo-aside" src="../assets/img/logos/logo-auto.png" alt="">
         
-                </fieldset>
+        </div>   
 
+        <div class="txt-aside">
+            <h2>REDBLOCK CARS</h2>
+        </div>
+        
+        <div class="img-aside">
+            <img class="logos" src="/assets/img/logos/bmw.png" alt="">
+
+            <img class="logos" src="/assets/img/logos/vw.png" alt="">
+
+            <img class="logos" src="/assets/img/logos/peugeot.png" alt="">
+
+            <img class="logos" src="/assets/img/logos/renault.png" alt="">
+        </div>   
+    </aside>
+
+    <aside class="aside2">
+
+        <div class="aside">
+
+            
+            
+
+            <div class="contenedor-logo">
+                    
+                <img class="logo-aside" src="../assets/img/logos/logo-auto.png" alt="">
+            
             </div>   
 
-                <input class= "formsItems" type="submit" value="Enviar">
-                <input class= "formsItems" type="reset" value="Reiniciar formulario">
+            <div class="txt-aside">
+                <h2>REDBLOCK CARS</h2>
+            </div>
+            
+            
+            
+            <div class="img-aside">
+                <img class="logos" src="/assets/img/logos/bmw.png" alt="">
 
-        </form>
-        
-    </main>
+                <img class="logos" src="/assets/img/logos/vw.png" alt="">
+
+                <img class="logos" src="/assets/img/logos/peugeot.png" alt="">
+
+                <img class="logos" src="/assets/img/logos/renault.png" alt="">
+            </div>
+
+
+
+
+        </div>
+
+    </aside>
   
-    <footer>
+    
+
+    <footer class="footer">
             
         <div class="pie">
             <a href="https://www.instagram.com/superautosuy/?hl=es-la"><img src="../assets/img/logos/logo-ig.png" alt="logo-ig"></a>
@@ -135,10 +195,12 @@
         <br>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 
 </body>
 </html>
