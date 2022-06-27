@@ -1,157 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SuperAutosUY</title>
-        <link rel="shortcut icon" href="./assets/img/logos/logo-png.png">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    </head>
-    <body class="container">
-        <header class="header">
-            <div class="logo">
-                <a href="./index.html"><img src="./assets/img/logos/logo-png.png" alt="logo"></a>
-            </div>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperAutosUY</title>
+    <link rel="shortcut icon" href="../assets/img/logos/logo-png.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
 
-        <nav class="navbar">
-            <ul>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/contactos.html">Contacto</a></li>
-                <li><a href="./pages/fotografias.html">Galería</a></li>
-                <li><a href="./pages/proximos-eventos.html">Próximos eventos</a></li>
+    <header class="header d-flex justify-content-center mb-3 ">
+
+       <a href="./index.html"><img src="./assets/img/logos/logo-png.png" alt=""></a>
+
+    </header>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark d-flex">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/proximos-eventos.html">Próximos eventos</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+    </nav>
 
+    <div class="container">
+        <aside class="aside">
+        
+        </aside>
 
         <main class="main">
-
-            <h3 class="subtitulo">Inicio</h3>
-
-            <h4 id="sub-inicio">Si tu pasión son los autos estás en el lugar indicado</h4>
-
-            <p class="parrafo-inicio">Bienvenidos a SuperAutosUY, una de las comunidades más grandes de spotters automovilísticos de Uruguay, donde todos compartimos la pasión por los vehículos exóticos y llamativos que rondan en las calles de nuestro país.</p>
-
-            <div class="contenedor-galeria">
-
-
-                <div class="tarjeta-ph-i" data-aos="fade-right "
-                data-aos-anchor="#example-anchor"
-                data-aos-offset="700"
-                data-aos-duration="700">
-                    <img class="tarjeta-i" src="../assets/img/autos/auto-1.jpg" alt="">
+            <div class="d-flex justify-content-center">
+                <div class="text-center m-5 col-11">
+                    <h3 class="subtitulo">Inicio</h3>
+                    <h4 class="sub-inicio lead mt-3">Si tu pasión son los autos estás en el lugar indicado.</h4>
                 </div>
+            </div>
+            <div class="justify-content-center text-center  p-4 parrafo-inicio">
+                <p>Bienvenidos a <b>SuperAutosUY</b>, una de las comunidades más grandes de spotters automovilísticos de Uruguay, donde todos compartimos la pasión por los vehículos exóticos y llamativos que rondan en las calles de nuestro país.</p>
+                    
+                    <div class="d-flex row col-12 mt-4 mb-4 justify-content-center">
+                        <div class="tarjeta-inicio col-10 col-md-7 col-xl-3 m-3">
+                            <img class="prueba-img" src="./assets/img/autos/auto-1.jpg" alt="">
+                        </div>
+                        <div class="tarjeta-inicio col-10 col-md-7 col-xl-3 m-3">
+                            <img class="" src="./assets/img/autos/auto-2.jpg" alt="">
+                        </div>
+                        <div class="tarjeta-inicio col-10 col-md-7 col-xl-3 m-3">
+                            <img class="" src="./assets/img/autos/auto-10.jpg" alt="">
+                        </div>
+                    </div>
 
-                <div class="tarjeta-ph-i" data-aos="zoom-in "
-                data-aos-duration="700">
-                    <img class="tarjeta-i" src="../assets/img/autos/auto-2.jpg" alt="">
-                </div>
-                
-                <div class="tarjeta-ph-i" data-aos="fade-left"
-                data-aos-anchor="#example-anchor"
-                data-aos-offset="700"
-                data-aos-duration="700">
-                    <img class="tarjeta-i" src="../assets/img/autos/auto-10.jpg" alt="">
-                </div>
-            
+                <p>De parte de nuestro equipo te invitamos a recorrer todas las secciones de nuestra página, para que no te pierdas nada de lo que ocurra en el mundo de los autos en Uruguay, nos comprometemos a mejorar día a día nuestro sitio web, para brindarles la mejor información y dejar conforme a nuestro público. No olvides seguirnos en nuestras redes sociales para tenes noticias en vivo e interacuar con nosotros. Disfruten de nuestro sitio web, "De fanáticos para fanáticos".</p>
             </div>
 
-            <p class="parrafo-inicio-2">De parte de nuestro equipo te invitamos a recorrer todas las secciones de nuestra página, para que no te pierdas nada de lo que ocurra en el mundo de los autos en Uruguay, nos comprometemos a mejorar día a día nuestro sitio web, para brindarles la mejor información y dejar conforme a nuestro público. No olvides seguirnos en nuestras redes sociales para tenes noticias en vivo e interacuar con nosotros. Disfruten de nuestro sitio web, "De fanáticos para fanáticos".</p>
-
+            <div id="nosotros" class="justify-content-center text-center  p-4 parrafo-inicio bloque-subtitulo">
+                <h3 class="subtitulo text-center m-5 col-11">Nuestra historia</h3>
+                <div>
+                    <p class="parrafo-nosotros">Esta página es llevada adelante por dos hermanos de Solymar, Ciudad de la Costa, quienes desde pequeños compartimos una gran pasión, los autos.</p>
+                    <p class="parrafo-nosotros">Nuestra idea empezó como un simple hobby, sacar fotos, compartirlas entre nosotros y disfrutar de cada vehículo exótico que pasara frente a nuestros ojos. Luego de esto, a modo de encontrar un sitio en donde almacenar todas nuestras obras, se nos ocurrió lo que hoy en día es nuestra página de spotters, nuestro perfil, <b>SuperAutosUY</b>. 5 años de jornadas de fotografías, alegrías y más resumidas en un solo lugar, disfruten de esta gran pasión. </p>
+                    <p class="parrafo-nosotros">Hemos recorrido muchos lugares del país en busca de nuevos autos por fotografiar, siendo de los lugares más visitados y donde más éxito obtuvimos, la ciudad de Punta del Este, donde en temporada de verano un montón de estas bellas máquinas se dejan ver, ya que es un sitio muy visitado por extranjeros, quienes vienen a recorrer de sus grandes atracciones con su auto de lujo, deleitando así la vista de los amantes del automovilismo en general.</p>
+                    <p class="parrafo-nosotros">Si bien nuestra página es de Uruguay, en búsqueda de complacer al visitante de la misma, nos tomamos el atrevimiento de expandir nuestras fronteras en algunas circunstancias. Europa, por ejemplo, es uno de los lugares en donde los spotters de <b>SuperAutosUY</b> hemos registrado en imágenes autos descomunales, que no llegan a nuestro país, y es por ese motivo que decidimos traerlo aquí, quizá no físicamente, pero si de forma virtual.</p>
+                    <p class="parrafo-nosotros"> De parte de <b>SuperAutosUY</b> les deseamos un buen paso por nuestra página y los invitamos a conocer todas nuestras secciones, ¡construímos esto por y para ustedes, fanáticos!.</p>
+                </div>  
+            </div>
             
 
         </main>
 
-        <aside class="aside">
- 
-            <div class="contenedor-logo">
-                    
-                <img class="logo-aside" src="../assets/img/logos/logo-auto.png" alt="">
-            
-            </div>   
-    
-            <div class="txt-aside">
-                <h2>REDBLOCK CARS</h2>
-            </div>
-            
-            <div class="img-aside">
-                <img class="logos" src="/assets/img/logos/bmw.png" alt="">
-    
-                <img class="logos" src="/assets/img/logos/vw.png" alt="">
-    
-                <img class="logos" src="/assets/img/logos/peugeot.png" alt="">
-    
-                <img class="logos" src="/assets/img/logos/renault.png" alt="">
-            </div>   
-        </aside>
-    
-        <aside class="aside2">
-    
-            <div class="aside">
-    
-                
-                
-    
-                <div class="contenedor-logo">
-                        
-                    <img class="logo-aside" src="../assets/img/logos/logo-auto.png" alt="">
-                
-                </div>   
-    
-                <div class="txt-aside">
-                    <h2>REDBLOCK CARS</h2>
-                </div>
-                
-                
-                
-                <div class="img-aside">
-                    <img class="logos" src="/assets/img/logos/bmw.png" alt="">
-    
-                    <img class="logos" src="/assets/img/logos/vw.png" alt="">
-    
-                    <img class="logos" src="/assets/img/logos/peugeot.png" alt="">
-    
-                    <img class="logos" src="/assets/img/logos/renault.png" alt="">
-                </div>
-    
-    
-    
-    
-            </div>
-    
-        </aside>
-    
-        <footer class="footer">
-
-            <div class="pie">
-                <a href="https://www.instagram.com/superautosuy/?hl=es-la"><img src="./assets/img/logos/logo-ig.png" alt="logo-ig"></a> 
-            <h5 class="txt-footer">
-
-                ©SuperAutosUY, todos los derechos reservados.
-                
-                <div class="location">
-                    Montevideo, Uruguay.
-                </div>
-                   
-            </h5>
-            <a href="https://www.facebook.com/SuperAutosUy"><img src="./assets/img/logos/174848.png" alt="logo-fb"></a>
-            </div>
-
-            <div class="bandera" data-aos="fade-left">
-            <img src="./assets/img/logos/descargar.png" alt="">
-            </div>
         
 
+        <aside class="aside2">
+            
+        </aside>
+    </div>
 
-        </footer>
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <footer class="footer bg-dark">
+
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="redes justify-content-center text-center col-1">
+                <a href=""><img src="./assets/img/logos/174848.png" alt=""></a>
+            </div>
+            <div class="col-10 text-center">
+                <p class="txt-footer">©SuperAutosUY, todos los derechos reservados.</p>
+                <p class="txt-footer">Montevideo, Uruguay.</p>
+            </div>
+            <div class="redes col-1 text-center"> 
+                <a href="https://www.instagram.com/superautosuy/?hl=es-la"><img class="" src="./assets/img/logos/logo-ig.png" alt=""></a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <img class="col-3 col-md-2 col-xl-1" src="./assets/img/logos/descargar.png" alt="">
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
         AOS.init();
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    </body>
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+   
+
+</body>
 </html>
+
+
