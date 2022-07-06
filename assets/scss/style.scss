@@ -7,6 +7,7 @@
 .container {
     max-width: 2560px;
 }
+@import "variables";
 // FUENTES 
 @font-face {
     font-family: "Subtitulo";
@@ -113,7 +114,6 @@
 }
 // CARD
 .card {
-    background-color: #ffffff;
     border-radius: 15px;
     border-width: 3px;
     border-color: black;
@@ -127,16 +127,16 @@
     font-size: 16px;                        
 }  
 .button {
-    font-family: "footer";
-    font-size: 16px;  
-    text-decoration: none;
-    border: solid 1px black;
-    border-radius: 15px;
-    background-color: white;
-    color: black;
-    border-width: 1px;
-    transition: 0.4s;
-    padding: 5px;
+    font-family: map-get($btn , font-family);
+    font-size:  map-get($btn , font-size); 
+    text-decoration:  map-get($btn , text-decoration);
+    border:  map-get($btn , border);
+    border-radius:  map-get($btn , border-radius);
+    background-color:  map-get($btn , background-color);
+    color:  map-get($btn , color);
+    border-width:  map-get($btn , border-width);
+    transition: map-get($btn , transition);
+    padding: map-get($btn , padding);
     &:hover {            
         color:black;
         background-color: #9b9d9e;
@@ -144,7 +144,6 @@
 }
 // FORMS
 .contacto {
-    background-color: #EEEE;
     padding: 0;
     margin: 0;
 }
@@ -165,6 +164,14 @@
     }
 }
 
+
+
+@each $key, $var in $colores {
+
+    .fondo-#{$key}{
+        background-color: $var;
+    }
+}    
 
 
 
