@@ -51,28 +51,24 @@
     margin: 0px;
 }
 .subtitulo {
-    font-family: "Subtitulo";
-    font-size: 50px;
+    @include font(subtitulo, 50px);
     color: red;   
 }
 .bloque-subtitulo {
     background-color: #EEEE;
 }
 .lead {
-    font-size: 24px;
-    font-family: "subtitulo";
+    @include font(subtitulo, 24px); 
 }
 .parrafo-inicio {
-    font-family: "footer";
-    font-weight: thin ;
+    @include font(footer, 16px);
 }
 .tarjeta-inicio {    
     border: solid 10px black;
     padding: 0px;
 }
 .parrafo-nosotros {
-    font-family: "footer";
-    font-weight: thin ;
+    @include font(footer, 16px); 
 }
 // ASIDE
 .aside {
@@ -96,7 +92,7 @@
 }
 .txt-footer {
     color: #9b9d9e;
-    font-size: 18px;
+    @include font(footer, 18px); 
 }
 .redes {
     transition: 0.5s;
@@ -119,12 +115,10 @@
     border-color: black;
 }
 .card-title {
-    font-family: "subtitulo";
-    font-size: 24px;  
+    @include font(subtitulo, 24px);    
 }
 .card-text {
-    font-family: "footer";
-    font-size: 16px;                        
+    @include font(footer, 16px);                     
 }  
 .button {
     font-family: map-get($btn , font-family);
@@ -161,11 +155,8 @@
         grid-template-areas: "main main main main";
         padding: 0%;
         margin: 0%;       
-    }
+    }  
 }
-
-
-
 @each $key, $var in $colores {
 
     .fondo-#{$key}{
