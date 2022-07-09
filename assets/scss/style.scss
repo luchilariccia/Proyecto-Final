@@ -6,6 +6,7 @@
 }
 .container {
     max-width: 2560px;
+    min-width: 100%;
 }
 @import "variables";
 // FUENTES 
@@ -25,14 +26,14 @@
 .header {
     min-height: 150px;
     transition: 1s;
-    min-width: 320px;
+    min-width: 100%;
     &:hover {
         transform: scale(01.05);
     }
 }
 // NAVEGADOR
 .navbar{
-    min-width: 320px;
+    min-width: 100%;
     grid-area: navbar;
     .navbar-nav, .mr-auto {
         flex: 1;  
