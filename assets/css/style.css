@@ -161,6 +161,9 @@
 }
 
 @media (max-width: 1200px) {
+  .container {
+    display: flex;
+  }
   .aside {
     display: none;
   }
@@ -169,13 +172,7 @@
     display: none;
   }
 
-  .container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-areas: "main main main main";
-    padding: 0%;
-    margin: 0%;
-  }
+ 
 }
 .fondo-primario {
   background-color: rgb(255, 255, 255);
