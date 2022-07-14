@@ -15,6 +15,10 @@
   src: url(../fonts/Tipografia-sub.ttf);
 }
 @font-face {
+  font-family: "Titulo";
+  src: url(../fonts/coolvetica-rg.otf);
+}
+@font-face {
   font-family: "parrafo";
   src: url(../fonts/tipografia-p.ttf);
 }
@@ -51,14 +55,15 @@
   margin: 0px;
 }
 
+h1, h2, h3 {
+  font-family: Titulo !important;
+  letter-spacing: 2px;
+}
+
 .subtitulo {
   font-family: subtitulo;
   font-size: 50px;
   color: red;
-}
-
-.bloque-subtitulo {
-  background-color: rgba(238, 238, 238, 0.9333333333);
 }
 
 .lead {
@@ -121,7 +126,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: 103.65px auto auto 103.65px;
+  grid-template-columns: 100px auto auto 100px;
   grid-template-areas: "aside main main aside2";
   padding: 0%;
   margin: 0%;

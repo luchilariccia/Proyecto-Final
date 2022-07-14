@@ -15,6 +15,10 @@
     src: url(../fonts/Tipografia-sub.ttf);
 }
 @font-face {
+    font-family: "Titulo";
+    src: url(../fonts/coolvetica-rg.otf);
+}
+@font-face {
     font-family: "parrafo";
     src: url(../fonts/tipografia-p.ttf);
 }
@@ -51,12 +55,13 @@
     grid-area: main;
     margin: 0px;
 }
+h1, h2, h3 {
+    font-family: Titulo !important;
+    letter-spacing: 2px;
+}
 .subtitulo {
     @include font(subtitulo, 50px);
     color: red;   
-}
-.bloque-subtitulo {
-    background-color: #EEEE;
 }
 .lead {
     @include font(subtitulo, 24px); 
@@ -108,7 +113,7 @@
 // GRIDS
 .container {
     display: grid;
-    grid-template-columns: 103.65px auto auto 103.65px;
+    grid-template-columns: 100px auto auto 100px;
     grid-template-areas: "aside main main aside2";
     padding: 0%;
     margin: 0%;   
