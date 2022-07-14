@@ -7,6 +7,7 @@
 
 .container {
   max-width: 2560px;
+  min-width: 100%;
 }
 
 @font-face {
@@ -24,14 +25,14 @@
 .header {
   min-height: 150px;
   transition: 1s;
-  min-width: 320px;
+  min-width: 100%;
 }
 .header:hover {
   transform: scale(1.05);
 }
 
 .navbar {
-  min-width: 320px;
+  min-width: 100%;
   grid-area: navbar;
 }
 .navbar .navbar-nav, .navbar .mr-auto {
@@ -70,9 +71,13 @@
   font-size: 16px;
 }
 
-.tarjeta-inicio {
+.tarjeta-galeria, .tarjeta-inicio {
   border: solid 10px black;
   padding: 0px;
+}
+
+.tarjeta-inicio {
+  border-radius: 15px 0px 15px 0px;
 }
 
 .parrafo-nosotros {
@@ -161,18 +166,19 @@
 }
 
 @media (max-width: 1200px) {
-  .container {
-    display: flex;
-  }
   .aside {
     display: none;
   }
-
   .aside2 {
     display: none;
   }
-
- 
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: "main main main main";
+    padding: 0%;
+    margin: 0%;
+  }
 }
 .fondo-primario {
   background-color: rgb(255, 255, 255);

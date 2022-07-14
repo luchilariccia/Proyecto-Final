@@ -64,9 +64,13 @@
 .parrafo-inicio {
     @include font(footer, 16px);
 }
-.tarjeta-inicio {    
+.tarjeta-galeria {    
     border: solid 10px black;
     padding: 0px;
+}
+.tarjeta-inicio {
+    @extend .tarjeta-galeria;
+    border-radius: 15px 0px 15px 0px;
 }
 .parrafo-nosotros {
     @include font(footer, 16px); 
