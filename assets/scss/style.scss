@@ -30,14 +30,17 @@
 .header {
     min-height: 150px;
     transition: 1s;
-    min-width: 100%;
-    &:hover {
-        transform: scale(01.05);
-    }
+    max-width: 100%;
+    
+}
+.logo {
+    width: 17%;
+    margin-bottom: -50px;
+    min-width: 250px;
 }
 // NAVEGADOR
 .navbar{
-    min-width: 100%;
+    min-width: 370px;
     grid-area: navbar;
     .navbar-nav, .mr-auto {
         flex: 1;  
@@ -55,6 +58,73 @@
     grid-area: main;
     margin: 0px;
 }
+.contenedor-tarjeta-desktop {
+    border: 2px solid black;
+    .fecha {
+
+        .dia-fecha {
+            margin-bottom: -30px;
+            font-size: 70px;
+        }
+        .mes-fecha {
+            font-weight: 300;
+            line-height: 60px;
+            text-transform: uppercase;
+            font-size: 30px;
+        }    
+    }
+    .linea {
+        border-top: 3px solid black;
+        max-width: 120px;
+        padding: 0;
+        transform: rotate( -65deg);
+    }
+    .boton-eventos {
+        text-decoration: none;
+        color: black;
+        border: 2px solid black;
+        transition: 0.2s;
+        @include font(footer, 18px);
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+}
+.contenedor-tarjeta-mobile {
+    border: 1px solid black;
+    .fecha-mobile {
+        .dia-mobile {
+            margin-bottom: -30px;
+            font-size: 70px;
+        }
+        .mes-mobile {
+            font-weight: 300;
+            line-height: 60px;
+            text-transform: uppercase;
+            font-size: 30px;
+        }    
+    }
+    .linea {
+        border-top: 2px solid black;
+        max-width: auto;
+        padding: 0;
+    }
+    .linea-mobile {
+        border-top: 1px solid black;
+        height: 2px;
+        max-width: 200px;
+        padding: 0;
+        margin: 20px auto 0 auto;
+    }
+    .boton-eventos-mobile {
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        padding: 10px 50px;        
+    }
+}
+
 h1, h2, h3 {
     font-family: Titulo !important;
     letter-spacing: 2px;
@@ -121,7 +191,7 @@ h1, h2, h3 {
 // CARD
 .card {
     border-radius: 15px;
-    border-width: 3px;
+    border-width: 1px;
     border-color: black;
 }
 .card-title {
@@ -142,8 +212,10 @@ h1, h2, h3 {
     transition: map-get($btn , transition);
     padding: map-get($btn , padding);
     &:hover {            
-        color:black;
-        background-color: #9b9d9e;
+        &:hover {
+            background-color: black;
+            color: white;
+        }
     }
 }
 // FORMS
@@ -152,7 +224,23 @@ h1, h2, h3 {
     margin: 0;
 }
 // RESPONSIVE
+@media (max-width: 880px) {
+    .contenedor-tarjeta-desktop {
+        display: none !important;
+    }
+    .logo {
+        max-width: 25%;
+    }
+}
+@media (min-width: 880px) {
+    .contenedor-tarjeta-mobile {
+        display: none !important;
+    }
+}
 @media (max-width: 1200px) {
+    .logo {
+        width: 40%;
+    }
     .aside {
         display: none;
     }
@@ -172,7 +260,4 @@ h1, h2, h3 {
     .fondo-#{$key}{
         background-color: $var;
     }
-}    
-
-
-
+}

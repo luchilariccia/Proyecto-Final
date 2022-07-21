@@ -29,14 +29,17 @@
 .header {
   min-height: 150px;
   transition: 1s;
-  min-width: 100%;
+  max-width: 100%;
 }
-.header:hover {
-  transform: scale(1.05);
+
+.logo {
+  width: 17%;
+  margin-bottom: -50px;
+  min-width: 250px;
 }
 
 .navbar {
-  min-width: 100%;
+  min-width: 370px;
   grid-area: navbar;
 }
 .navbar .navbar-nav, .navbar .mr-auto {
@@ -53,6 +56,70 @@
 .main {
   grid-area: main;
   margin: 0px;
+}
+
+.contenedor-tarjeta-desktop {
+  border: 2px solid black;
+}
+.contenedor-tarjeta-desktop .fecha .dia-fecha {
+  margin-bottom: -30px;
+  font-size: 70px;
+}
+.contenedor-tarjeta-desktop .fecha .mes-fecha {
+  font-weight: 300;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.contenedor-tarjeta-desktop .linea {
+  border-top: 3px solid black;
+  max-width: 120px;
+  padding: 0;
+  transform: rotate(-65deg);
+}
+.contenedor-tarjeta-desktop .boton-eventos {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  transition: 0.2s;
+  font-family: footer;
+  font-size: 18px;
+}
+.contenedor-tarjeta-desktop .boton-eventos:hover {
+  background-color: black;
+  color: white;
+}
+
+.contenedor-tarjeta-mobile {
+  border: 1px solid black;
+}
+.contenedor-tarjeta-mobile .fecha-mobile .dia-mobile {
+  margin-bottom: -30px;
+  font-size: 70px;
+}
+.contenedor-tarjeta-mobile .fecha-mobile .mes-mobile {
+  font-weight: 300;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.contenedor-tarjeta-mobile .linea {
+  border-top: 2px solid black;
+  max-width: auto;
+  padding: 0;
+}
+.contenedor-tarjeta-mobile .linea-mobile {
+  border-top: 1px solid black;
+  height: 2px;
+  max-width: 200px;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+.contenedor-tarjeta-mobile .boton-eventos-mobile {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 50px;
 }
 
 h1, h2, h3 {
@@ -134,7 +201,7 @@ h1, h2, h3 {
 
 .card {
   border-radius: 15px;
-  border-width: 3px;
+  border-width: 1px;
   border-color: black;
 }
 
@@ -157,12 +224,12 @@ h1, h2, h3 {
   background-color: white;
   color: black;
   border-width: 1px;
-  transition: 0.4s;
+  transition: 0.2s;
   padding: 5px;
 }
-.button:hover {
-  color: black;
-  background-color: #9b9d9e;
+.button:hover:hover {
+  background-color: black;
+  color: white;
 }
 
 .contacto {
@@ -170,7 +237,23 @@ h1, h2, h3 {
   margin: 0;
 }
 
+@media (max-width: 880px) {
+  .contenedor-tarjeta-desktop {
+    display: none !important;
+  }
+  .logo {
+    max-width: 25%;
+  }
+}
+@media (min-width: 880px) {
+  .contenedor-tarjeta-mobile {
+    display: none !important;
+  }
+}
 @media (max-width: 1200px) {
+  .logo {
+    width: 40%;
+  }
   .aside {
     display: none;
   }
