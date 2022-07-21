@@ -3,12 +3,17 @@
     padding: 0px;
     box-sizing: border-box;
     max-width: 100%;
+    overflow-x: none;
 }
 .container {
     max-width: 2560px;
     min-width: 100%;
 }
+
+
 @import "variables";
+
+
 // FUENTES 
 @font-face {
     font-family: "Subtitulo";
@@ -26,21 +31,21 @@
     font-family: "footer";
     src: url(../fonts/Montserrat-Italic-VariableFont_wght.ttf);
 }
+
 // HEADER
 .header {
     min-height: 150px;
-    transition: 1s;
-    max-width: 100%;
-    
+    max-width: 100%; 
 }
 .logo {
     width: 17%;
     margin-bottom: -50px;
     min-width: 250px;
 }
+
 // NAVEGADOR
 .navbar{
-    min-width: 370px;
+    min-width: 100%;
     grid-area: navbar;
     .navbar-nav, .mr-auto {
         flex: 1;  
@@ -53,6 +58,11 @@
         }
     }
 }    
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
 // MAIN
 .main {
     grid-area: main;
@@ -224,6 +234,9 @@ h1, h2, h3 {
     margin: 0;
 }
 // RESPONSIVE
+
+
+
 @media (max-width: 880px) {
     .contenedor-tarjeta-desktop {
         display: none !important;

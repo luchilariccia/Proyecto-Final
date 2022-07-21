@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   max-width: 100%;
+  overflow-x: none;
 }
 
 .container {
@@ -28,7 +29,6 @@
 }
 .header {
   min-height: 150px;
-  transition: 1s;
   max-width: 100%;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .navbar {
-  min-width: 370px;
+  min-width: 100%;
   grid-area: navbar;
 }
 .navbar .navbar-nav, .navbar .mr-auto {
@@ -51,6 +51,11 @@
 }
 .navbar .navbar-nav a .nav-item, .navbar .mr-auto a .nav-item {
   margin: 0px 15px 0px 15px;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .main {
