@@ -283,4 +283,134 @@ h1, h2, h3 {
 
 .fondo-terciario {
   background-color: rgba(238, 238, 238, 0.9333333333);
+}
+
+.prod-img {
+  max-width: 100%;
+}
+
+.prod-img-carrito {
+  width: 180px;
+}
+
+.boton-eliminar {
+  border: #000000 solid 1px;
+  border-radius: 5px;
+  background-color: white;
+  font-family: "footer";
+}
+.boton-eliminar:hover {
+  border: white solid 1px;
+  background-color: black;
+  color: white;
+}
+
+.modal-dialog {
+  background-color: white;
+}
+
+.modal {
+  --bs-modal-width: 800px;
+}
+
+.modal-dialog {
+  --bs-modal-width: 80%;
+}
+
+.modal-content {
+  border: solid 1px white;
+  border-radius: 0%;
+  --bs-modal-bg: black;
+}
+
+.carrito-img {
+  width: 50px;
+}
+
+.side-social {
+  width: 130px;
+  position: fixed;
+  height: 150px;
+  top: 30%;
+  background-color: #000000;
+  right: -100px;
+  padding: 10px 3px;
+  transition: 0.7s;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.side-social:hover {
+  right: 0px;
+}
+
+@font-face {
+  font-family: "titulos";
+  src: url(../fonts/Kanit-Bold.ttf);
+}
+@font-face {
+  font-family: "titulos-2";
+  src: url(../fonts/Aileron-SemiBold.otf);
+}
+.flecha {
+  width: 64px;
+  margin-left: 5px;
+  margin-top: 30px;
+}
+
+.carrito-side {
+  position: fixed;
+  bottom: 50%;
+  right: 150px;
+}
+
+.modal-titulo {
+  font-family: "subtitulo";
+  font-size: 24px;
+}
+
+.btn-ok-modal {
+  background-color: #000000;
+}
+
+.button {
+  font-size: 16px;
+  text-decoration: none;
+  border: solid 1px black;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  border-width: 1px;
+  transition: 0.2s;
+  padding: 5px;
+}
+
+.button:hover:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn-ofertas {
+  background-color: white;
+  border: 1px solid black;
+  font-family: footer;
+}
+.btn-ofertas:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.form-control:focus {
+  color: black;
+  background-color: #fff;
+  border-color: black;
+  outline: 0;
+  box-shadow: none;
+}
+
+.card-title {
+  font-size: 24px;
+}
+
+.card-text {
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */

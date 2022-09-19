@@ -1,0 +1,19 @@
+[
+    {
+        "id": 5, 
+        "nombre" : "Paquete BlackFriday",
+        "descripcion": "Consiste en una sesión en la ubicación que usted desee, con las características que guste, pero con un máximo de 60 fotos a elección del repertorio completo.",
+        "precio" : 1800,
+        "precio-nuevo" : 1300,
+        "destacado" : 0
+    },
+    {
+      "id": 6, 
+      "nombre" : "Paquete SportWeek",
+      "descripcion": "Consiste en una sesión en la ubicación que usted desee, con las características que guste, pero con un máximo de 30 fotos a elección del repertorio completo.",
+      "precio" :  1900,
+      "precio-nuevo" : 1300,
+      "img" : "/assets/img/logos/logo-nuevo-tarjetas-p.png",
+      "destacado" : 0  
+    }
+]
